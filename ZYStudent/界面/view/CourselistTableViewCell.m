@@ -43,6 +43,9 @@
     x = imgview.mj_x +imgview.mj_w + 5;
     y = 8;
     w = Main_Screen_Width - x - 5;
+    if (_index==1) {
+        h =20;
+    }else
     h = 40;
     
     lbl = [[UILabel alloc]initWithFrame:CGRectMake(x, y, w, h)];

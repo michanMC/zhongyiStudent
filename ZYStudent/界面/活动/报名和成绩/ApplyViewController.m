@@ -1,92 +1,75 @@
 //
-//  OKOrderViewController.m
+//  ApplyViewController.m
 //  ZYStudent
 //
-//  Created by MC on 2016/12/15.
+//  Created by MC on 2016/12/18.
 //  Copyright © 2016年 MC. All rights reserved.
 //
 
-#import "OKOrderViewController.h"
+#import "ApplyViewController.h"
 #import "OKOrderTableViewCell.h"
 #import "SelectSonViewController.h"
 #import "PayViewController.h"
-@interface OKOrderViewController ()<UITableViewDelegate,UITableViewDataSource,SelectSondelegare>
+@interface ApplyViewController ()<UITableViewDataSource,UITableViewDelegate,SelectSondelegare>
 {
     
     UITableView *_tableView;
-    
     
 }
 
 @end
 
-@implementation OKOrderViewController
+@implementation ApplyViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"确认订单";
+    self.title = @"我要报名";
     [self prepareUI];
     // Do any additional setup after loading the view.
 }
 -(void)prepareUI{
     
-    _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, Main_Screen_Width, Main_Screen_Height - 64-49) style:UITableViewStyleGrouped];
+    _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, Main_Screen_Width, Main_Screen_Height - 64) style:UITableViewStyleGrouped];
     _tableView.delegate =self;
     _tableView.dataSource = self;
     [self.view addSubview:_tableView];
-    UIView * view =[[UIView alloc]initWithFrame:CGRectMake(0, Main_Screen_Height - 49, Main_Screen_Width, 49)];
-    view.backgroundColor = [UIColor whiteColor];
+    [self preparefooerView];
+}
+-(void)preparefooerView{
     
-    [self.view addSubview:view];
-
-    UILabel * lbl = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, Main_Screen_Width/2 + 20, 49)];
-    lbl.textColor = AppMCNATitleCOLOR;
-    lbl.text =@"订单总额: ￥2300.00";
-    lbl.font = [UIFont systemFontOfSize:15];
-    lbl.textAlignment = NSTextAlignmentCenter;
-    [view addSubview:lbl];
-    
-    
-    UIButton * btn =[[UIButton alloc]initWithFrame:CGRectMake(Main_Screen_Width/2 + 20, 0,  Main_Screen_Width /2 - 20,49)];
-    btn.backgroundColor =AppMCNACOLOR;
-    [btn setTitle:@"提交订单" forState:0];
-    UIColor *cc = AppMCNATitleCOLOR;
-    [btn setTitleColor:cc forState:0];
+    UIView * view =[[UIView alloc]initWithFrame:CGRectMake(0, 0, Main_Screen_Width, 100)];
+    _tableView.tableFooterView = view;
+    UIButton * btn =[[UIButton alloc]initWithFrame:CGRectMake(30, 15, Main_Screen_Width - 60, 40)];
+    btn.backgroundColor = AppMCNACOLOR;
     btn.titleLabel.font =[UIFont systemFontOfSize:15];
-    [btn addTarget:self action:@selector(actionOKbtn) forControlEvents:1<<6];
+    [btn setTitle:@"提交" forState:0];
+    UIColor * cc = AppMCNATitleCOLOR;
+    [btn setTitleColor:cc forState:0];
+    [btn addTarget:self action:@selector(actionBtn) forControlEvents:1<<6];
     [view addSubview:btn];
-
-    
-    
+    ViewRadius(btn, 3);
 }
--(void)actionOKbtn{
-    PayViewController * ctl =[[PayViewController alloc]init];
-    [self pushNewViewController:ctl];
-}
--(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 3;
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 2;
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 1;
+    if (section == 0) {
+        return 1;
+    }
+    return 2;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
-    return 0.001;
+    return 10;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    return 5;
+    return 0.001;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    if(indexPath.section == 0){
-        CGFloat viewh = MCAdaptiveH(750, 280, Main_Screen_Width);
-        return viewh;
-
-    }
-    if(indexPath.section == 1){
+    if (indexPath.section == 0) {
         return 50;
-        
     }
-    
-    
+
     return 44;
 }
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -101,48 +84,65 @@
     }
     cell.accessoryType= UITableViewCellAccessoryNone;
     if (indexPath.section == 0) {
-        [cell prepareUI1];
-        return cell;
-
-    }
-    if (indexPath.section == 1) {
         cell.accessoryType= UITableViewCellAccessoryDisclosureIndicator;
 
         [cell prepareUI4];
         return cell;
         
+
     }
-    if (indexPath.section == 2) {
-        [cell prepareUI3];
-        return cell;
+    if (indexPath.section == 1) {
+        if (indexPath.row == 0) {
+
+
+            [cell prepareUI3];
+            cell.titleLbl.text = @"联系方式";
+            cell.phoneText.placeholder = @"请输入手机号码";
+            return cell;
+
+        }
+        else
+        {
+            [cell prepareUI3];
+            cell.titleLbl.text = @"备注";
+            cell.phoneText.placeholder = @"请输入备注，限20字";
+            return cell;
+  
+        }
         
     }
-
-
-    
-
-    
-    
     
     return [[UITableViewCell alloc]init];
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-    
-    if (indexPath.section ==1) {
+    if (indexPath.section == 0) {
+        
         SelectSonViewController * ctl =[[SelectSonViewController alloc]init];
         ctl.delegate = self;
         [self pushNewViewController:ctl];
         
-
+        
+        
     }
+
+    
+    
+}
+-(void)actionBtn{
+    
+    PayViewController * ctl =[[PayViewController alloc]init];
+    [self pushNewViewController:ctl];
+ 
+    
     
 }
 -(void)selectSon
 {
     
 }
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

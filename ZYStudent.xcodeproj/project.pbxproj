@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C0F0E6B1E0512410056E072 /* PayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C0F0E6A1E0512410056E072 /* PayViewController.m */; };
+		4C0F0E6E1E05144D0056E072 /* PayViewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C0F0E6D1E05144D0056E072 /* PayViewTableViewCell.m */; };
+		4C0F0E711E0516E10056E072 /* PayStateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C0F0E701E0516E10056E072 /* PayStateViewController.m */; };
+		4C0F0E741E0535BA0056E072 /* btn_cbb2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C0F0E721E0535BA0056E072 /* btn_cbb2@2x.png */; };
+		4C0F0E751E0535BA0056E072 /* btn_cbb2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C0F0E731E0535BA0056E072 /* btn_cbb2@3x.png */; };
+		4C0F0E781E053ADF0056E072 /* MCimgRBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C0F0E771E053ADF0056E072 /* MCimgRBtn.m */; };
 		4C23940C1E019FE900BAB319 /* FriStateTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C23940B1E019FE900BAB319 /* FriStateTableViewCell.m */; };
 		4C2394111E01ABBE00BAB319 /* MyTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2394101E01ABBE00BAB319 /* MyTaskViewController.m */; };
 		4C2394141E01AD3000BAB319 /* MyTaskViewCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2394131E01AD3000BAB319 /* MyTaskViewCollectionViewCell.m */; };
@@ -24,6 +30,18 @@
 		4CB227301E00D94300F1F6F2 /* OrganTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB2272F1E00D94300F1F6F2 /* OrganTableViewCell.m */; };
 		4CB227331E00DC7800F1F6F2 /* icon_notice2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CB227311E00DC7800F1F6F2 /* icon_notice2@2x.png */; };
 		4CB227341E00DC7800F1F6F2 /* icon_notice2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CB227321E00DC7800F1F6F2 /* icon_notice2@3x.png */; };
+		4CE6652E1E06691000941649 /* MCTableSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE6652D1E06691000941649 /* MCTableSelectView.m */; };
+		4CE665331E0677CE00941649 /* MyLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE665321E0677CE00941649 /* MyLocationViewController.m */; };
+		4CE665361E067F6300941649 /* ActivityTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE665351E067F6300941649 /* ActivityTableViewCell.m */; };
+		4CE665391E06865F00941649 /* ActivityDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE665381E06865F00941649 /* ActivityDetailsViewController.m */; };
+		4CE6653C1E0686A500941649 /* ActivityApplyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE6653B1E0686A500941649 /* ActivityApplyViewController.m */; };
+		4CE6653F1E0686CA00941649 /* ActicitIntroduceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE6653E1E0686CA00941649 /* ActicitIntroduceViewController.m */; };
+		4CE665421E06974A00941649 /* ActivityApplyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE665411E06974A00941649 /* ActivityApplyTableViewCell.m */; };
+		4CE665451E069E6E00941649 /* LXGradientProcessView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE665441E069E6E00941649 /* LXGradientProcessView.m */; };
+		4CE665481E069FB500941649 /* UIColor+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE665471E069FB500941649 /* UIColor+Extensions.m */; };
+		4CE6654D1E06B2D200941649 /* ApplyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE6654C1E06B2D200941649 /* ApplyViewController.m */; };
+		4CE665501E06BB5100941649 /* ResultsInquiryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE6654F1E06BB5100941649 /* ResultsInquiryViewController.m */; };
+		4CE665531E06C1A500941649 /* InquirydateilsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE665521E06C1A500941649 /* InquirydateilsViewController.m */; };
 		4CE8CB2D1E0119AB000BDE72 /* MyDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE8CB2C1E0119AB000BDE72 /* MyDetailsViewController.m */; };
 		4CE8CB301E011A1F000BDE72 /* MyDetailsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE8CB2F1E011A1F000BDE72 /* MyDetailsTableViewCell.m */; };
 		4CE8CB351E013D46000BDE72 /* FriendlistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE8CB341E013D46000BDE72 /* FriendlistViewController.m */; };
@@ -454,6 +472,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C0F0E691E0512410056E072 /* PayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayViewController.h; sourceTree = "<group>"; };
+		4C0F0E6A1E0512410056E072 /* PayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayViewController.m; sourceTree = "<group>"; };
+		4C0F0E6C1E05144D0056E072 /* PayViewTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayViewTableViewCell.h; sourceTree = "<group>"; };
+		4C0F0E6D1E05144D0056E072 /* PayViewTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayViewTableViewCell.m; sourceTree = "<group>"; };
+		4C0F0E6F1E0516E10056E072 /* PayStateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayStateViewController.h; sourceTree = "<group>"; };
+		4C0F0E701E0516E10056E072 /* PayStateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayStateViewController.m; sourceTree = "<group>"; };
+		4C0F0E721E0535BA0056E072 /* btn_cbb2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_cbb2@2x.png"; sourceTree = "<group>"; };
+		4C0F0E731E0535BA0056E072 /* btn_cbb2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_cbb2@3x.png"; sourceTree = "<group>"; };
+		4C0F0E761E053ADF0056E072 /* MCimgRBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCimgRBtn.h; sourceTree = "<group>"; };
+		4C0F0E771E053ADF0056E072 /* MCimgRBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCimgRBtn.m; sourceTree = "<group>"; };
 		4C23940A1E019FE900BAB319 /* FriStateTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriStateTableViewCell.h; sourceTree = "<group>"; };
 		4C23940B1E019FE900BAB319 /* FriStateTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriStateTableViewCell.m; sourceTree = "<group>"; };
 		4C23940F1E01ABBE00BAB319 /* MyTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTaskViewController.h; sourceTree = "<group>"; };
@@ -484,6 +512,30 @@
 		4CB2272F1E00D94300F1F6F2 /* OrganTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrganTableViewCell.m; sourceTree = "<group>"; };
 		4CB227311E00DC7800F1F6F2 /* icon_notice2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_notice2@2x.png"; sourceTree = "<group>"; };
 		4CB227321E00DC7800F1F6F2 /* icon_notice2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_notice2@3x.png"; sourceTree = "<group>"; };
+		4CE6652C1E06691000941649 /* MCTableSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCTableSelectView.h; sourceTree = "<group>"; };
+		4CE6652D1E06691000941649 /* MCTableSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCTableSelectView.m; sourceTree = "<group>"; };
+		4CE665311E0677CE00941649 /* MyLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLocationViewController.h; sourceTree = "<group>"; };
+		4CE665321E0677CE00941649 /* MyLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLocationViewController.m; sourceTree = "<group>"; };
+		4CE665341E067F6300941649 /* ActivityTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityTableViewCell.h; sourceTree = "<group>"; };
+		4CE665351E067F6300941649 /* ActivityTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityTableViewCell.m; sourceTree = "<group>"; };
+		4CE665371E06865F00941649 /* ActivityDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityDetailsViewController.h; sourceTree = "<group>"; };
+		4CE665381E06865F00941649 /* ActivityDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityDetailsViewController.m; sourceTree = "<group>"; };
+		4CE6653A1E0686A500941649 /* ActivityApplyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityApplyViewController.h; sourceTree = "<group>"; };
+		4CE6653B1E0686A500941649 /* ActivityApplyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityApplyViewController.m; sourceTree = "<group>"; };
+		4CE6653D1E0686CA00941649 /* ActicitIntroduceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActicitIntroduceViewController.h; sourceTree = "<group>"; };
+		4CE6653E1E0686CA00941649 /* ActicitIntroduceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActicitIntroduceViewController.m; sourceTree = "<group>"; };
+		4CE665401E06974A00941649 /* ActivityApplyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityApplyTableViewCell.h; sourceTree = "<group>"; };
+		4CE665411E06974A00941649 /* ActivityApplyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityApplyTableViewCell.m; sourceTree = "<group>"; };
+		4CE665431E069E6E00941649 /* LXGradientProcessView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXGradientProcessView.h; sourceTree = "<group>"; };
+		4CE665441E069E6E00941649 /* LXGradientProcessView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXGradientProcessView.m; sourceTree = "<group>"; };
+		4CE665461E069FB500941649 /* UIColor+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extensions.h"; sourceTree = "<group>"; };
+		4CE665471E069FB500941649 /* UIColor+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extensions.m"; sourceTree = "<group>"; };
+		4CE6654B1E06B2D200941649 /* ApplyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplyViewController.h; sourceTree = "<group>"; };
+		4CE6654C1E06B2D200941649 /* ApplyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplyViewController.m; sourceTree = "<group>"; };
+		4CE6654E1E06BB5100941649 /* ResultsInquiryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsInquiryViewController.h; sourceTree = "<group>"; };
+		4CE6654F1E06BB5100941649 /* ResultsInquiryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsInquiryViewController.m; sourceTree = "<group>"; };
+		4CE665511E06C1A500941649 /* InquirydateilsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InquirydateilsViewController.h; sourceTree = "<group>"; };
+		4CE665521E06C1A500941649 /* InquirydateilsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InquirydateilsViewController.m; sourceTree = "<group>"; };
 		4CE8CB2B1E0119AB000BDE72 /* MyDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyDetailsViewController.h; sourceTree = "<group>"; };
 		4CE8CB2C1E0119AB000BDE72 /* MyDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyDetailsViewController.m; sourceTree = "<group>"; };
 		4CE8CB2E1E011A1F000BDE72 /* MyDetailsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyDetailsTableViewCell.h; sourceTree = "<group>"; };
@@ -1080,6 +1132,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C0F0E671E0510C70056E072 /* 支付 */ = {
+			isa = PBXGroup;
+			children = (
+				4C0F0E681E0510C70056E072 /* view */,
+				4C0F0E691E0512410056E072 /* PayViewController.h */,
+				4C0F0E6A1E0512410056E072 /* PayViewController.m */,
+				4C0F0E6F1E0516E10056E072 /* PayStateViewController.h */,
+				4C0F0E701E0516E10056E072 /* PayStateViewController.m */,
+			);
+			path = "支付";
+			sourceTree = "<group>";
+		};
+		4C0F0E681E0510C70056E072 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				4C0F0E6C1E05144D0056E072 /* PayViewTableViewCell.h */,
+				4C0F0E6D1E05144D0056E072 /* PayViewTableViewCell.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		4C23940D1E01AB9A00BAB319 /* 任务 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1108,9 +1181,16 @@
 		4CA2AA701E005DF20046D40F /* 活动 */ = {
 			isa = PBXGroup;
 			children = (
+				4CE665491E06B2AF00941649 /* 报名和成绩 */,
 				4CA2AA711E005DF20046D40F /* view */,
 				4CA2AA7C1E005E360046D40F /* ActivityViewController.h */,
 				4CA2AA7D1E005E360046D40F /* ActivityViewController.m */,
+				4CE665371E06865F00941649 /* ActivityDetailsViewController.h */,
+				4CE665381E06865F00941649 /* ActivityDetailsViewController.m */,
+				4CE6653A1E0686A500941649 /* ActivityApplyViewController.h */,
+				4CE6653B1E0686A500941649 /* ActivityApplyViewController.m */,
+				4CE6653D1E0686CA00941649 /* ActicitIntroduceViewController.h */,
+				4CE6653E1E0686CA00941649 /* ActicitIntroduceViewController.m */,
 			);
 			path = "活动";
 			sourceTree = "<group>";
@@ -1118,6 +1198,10 @@
 		4CA2AA711E005DF20046D40F /* view */ = {
 			isa = PBXGroup;
 			children = (
+				4CE665341E067F6300941649 /* ActivityTableViewCell.h */,
+				4CE665351E067F6300941649 /* ActivityTableViewCell.m */,
+				4CE665401E06974A00941649 /* ActivityApplyTableViewCell.h */,
+				4CE665411E06974A00941649 /* ActivityApplyTableViewCell.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -1125,6 +1209,7 @@
 		4CA2AA721E005DF20046D40F /* 机构 */ = {
 			isa = PBXGroup;
 			children = (
+				4CE6652F1E0676E800941649 /* 定位 */,
 				4CF76DAC1E029357004B8869 /* 确认订单 */,
 				4CF76DA01E0283A7004B8869 /* 预约试听 */,
 				4CA2AA731E005DF20046D40F /* view */,
@@ -1153,6 +1238,44 @@
 			sourceTree = "<group>";
 		};
 		4CA2AA751E005DF20046D40F /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		4CE6652F1E0676E800941649 /* 定位 */ = {
+			isa = PBXGroup;
+			children = (
+				4CE665301E0676E800941649 /* view */,
+				4CE665311E0677CE00941649 /* MyLocationViewController.h */,
+				4CE665321E0677CE00941649 /* MyLocationViewController.m */,
+			);
+			path = "定位";
+			sourceTree = "<group>";
+		};
+		4CE665301E0676E800941649 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		4CE665491E06B2AF00941649 /* 报名和成绩 */ = {
+			isa = PBXGroup;
+			children = (
+				4CE6654A1E06B2AF00941649 /* view */,
+				4CE6654B1E06B2D200941649 /* ApplyViewController.h */,
+				4CE6654C1E06B2D200941649 /* ApplyViewController.m */,
+				4CE6654E1E06BB5100941649 /* ResultsInquiryViewController.h */,
+				4CE6654F1E06BB5100941649 /* ResultsInquiryViewController.m */,
+				4CE665511E06C1A500941649 /* InquirydateilsViewController.h */,
+				4CE665521E06C1A500941649 /* InquirydateilsViewController.m */,
+			);
+			path = "报名和成绩";
+			sourceTree = "<group>";
+		};
+		4CE6654A1E06B2AF00941649 /* view */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -1619,6 +1742,8 @@
 		4CECCB2A1DFE812700E78314 /* 工具 */ = {
 			isa = PBXGroup;
 			children = (
+				4CE665431E069E6E00941649 /* LXGradientProcessView.h */,
+				4CE665441E069E6E00941649 /* LXGradientProcessView.m */,
 				4CE8CB3C1E014AA5000BDE72 /* Pop-up-window@2x.png */,
 				4CE8CB3D1E014AA5000BDE72 /* Pop-up-window@3x.png */,
 				4CE8CB391E0149EE000BDE72 /* MCCapacityView.h */,
@@ -1640,8 +1765,12 @@
 				4CECCB391DFE812700E78314 /* UIPlaceHolderTextView.m */,
 				4CECCB3A1DFE812700E78314 /* XMLReader.h */,
 				4CECCB3B1DFE812700E78314 /* XMLReader.m */,
+				4CE6652C1E06691000941649 /* MCTableSelectView.h */,
+				4CE6652D1E06691000941649 /* MCTableSelectView.m */,
 				4CECCB3C1DFE812700E78314 /* ZJScrollPageView */,
 				4CECCB4E1DFE812700E78314 /* ZYQAssetPickerController */,
+				4C0F0E761E053ADF0056E072 /* MCimgRBtn.h */,
+				4C0F0E771E053ADF0056E072 /* MCimgRBtn.m */,
 			);
 			path = "工具";
 			sourceTree = "<group>";
@@ -1709,6 +1838,8 @@
 		4CECCB5B1DFE812700E78314 /* 类别 */ = {
 			isa = PBXGroup;
 			children = (
+				4CE665461E069FB500941649 /* UIColor+Extensions.h */,
+				4CE665471E069FB500941649 /* UIColor+Extensions.m */,
 				4CECCB5C1DFE812700E78314 /* NSArray+Log.h */,
 				4CECCB5D1DFE812700E78314 /* NSArray+Log.m */,
 				4CECCB5E1DFE812700E78314 /* NSDictionary+Log.h */,
@@ -1740,6 +1871,8 @@
 		4CECCB6D1DFE812700E78314 /* 学生端切图 */ = {
 			isa = PBXGroup;
 			children = (
+				4C0F0E721E0535BA0056E072 /* btn_cbb2@2x.png */,
+				4C0F0E731E0535BA0056E072 /* btn_cbb2@3x.png */,
 				4CF76D961E026CDE004B8869 /* bg_teacher@2x.png */,
 				4CF76D971E026CDE004B8869 /* bg_teacher@3x.png */,
 				4CF76D811E024551004B8869 /* nav_back_arrow_white@2x.png */,
@@ -2028,6 +2161,7 @@
 		4CECCDB81DFE839500E78314 /* cintrol */ = {
 			isa = PBXGroup;
 			children = (
+				4C0F0E671E0510C70056E072 /* 支付 */,
 				4CF76D911E026A13004B8869 /* 老师名片 */,
 				4CF76D8E1E026831004B8869 /* OpinionViewController.h */,
 				4CF76D8F1E026831004B8869 /* OpinionViewController.m */,
@@ -2467,6 +2601,7 @@
 				4CECCDA11DFE812800E78314 /* tab_icon_activity@2x.png in Resources */,
 				4CECCD121DFE812800E78314 /* icon_alipay@3x.png in Resources */,
 				4CECCD4D1DFE812800E78314 /* icon_white@2x.png in Resources */,
+				4C0F0E741E0535BA0056E072 /* btn_cbb2@2x.png in Resources */,
 				4CECCD521DFE812800E78314 /* label_evaluation_grey@3x.png in Resources */,
 				4CECCCF21DFE812800E78314 /* btn_tel@3x.png in Resources */,
 				4CECCD621DFE812800E78314 /* login_btn@3x.png in Resources */,
@@ -2518,6 +2653,7 @@
 				4CECCD0F1DFE812800E78314 /* icon_address@2x.png in Resources */,
 				4CECCCE11DFE812800E78314 /* btn_activity_notstart@2x.png in Resources */,
 				4CECCCF81DFE812800E78314 /* def_bg2@3x.png in Resources */,
+				4C0F0E751E0535BA0056E072 /* btn_cbb2@3x.png in Resources */,
 				4CECCD511DFE812800E78314 /* label_evaluation_grey@2x.png in Resources */,
 				4CECCD4B1DFE812800E78314 /* icon_wechat@2x.png in Resources */,
 				4CECCCB91DFE812800E78314 /* ZYQAssetPicker.Bundle in Resources */,
@@ -2622,6 +2758,7 @@
 			files = (
 				4CECCCA11DFE812800E78314 /* SDWebImageManager.m in Sources */,
 				4CF76D951E026A3A004B8869 /* TeacherCardViewController.m in Sources */,
+				4CE665361E067F6300941649 /* ActivityTableViewCell.m in Sources */,
 				4CB227301E00D94300F1F6F2 /* OrganTableViewCell.m in Sources */,
 				4CECCCBC1DFE812800E78314 /* MCbackButton.m in Sources */,
 				4CECCCA21DFE812800E78314 /* SDWebImagePrefetcher.m in Sources */,
@@ -2641,14 +2778,17 @@
 				4CA2AA781E005E1A0046D40F /* OrganizationViewController.m in Sources */,
 				4CECCC831DFE812800E78314 /* NSObject+MJKeyValue.m in Sources */,
 				4CECCCBB1DFE812800E78314 /* BaseViewController.m in Sources */,
+				4CE6653C1E0686A500941649 /* ActivityApplyViewController.m in Sources */,
 				4CECCC821DFE812800E78314 /* NSObject+MJCoding.m in Sources */,
 				4CECCC7F1DFE812800E78314 /* MJPropertyKey.m in Sources */,
+				4CE665451E069E6E00941649 /* LXGradientProcessView.m in Sources */,
 				4CF76D521E0230B9004B8869 /* SearchViewController.m in Sources */,
 				4CE8CB481E014F65000BDE72 /* FriStateViewController.m in Sources */,
 				4CECCC6B1DFE812800E78314 /* UIWebView+AFNetworking.m in Sources */,
 				4C23940C1E019FE900BAB319 /* FriStateTableViewCell.m in Sources */,
 				4CF76D4B1E0225CD004B8869 /* PubliShrouteViewController.m in Sources */,
 				4CF76D9C1E027543004B8869 /* TeacherCardTableViewCell.m in Sources */,
+				4C0F0E711E0516E10056E072 /* PayStateViewController.m in Sources */,
 				4CECCDBF1DFE83AE00E78314 /* ChangePwdViewController.m in Sources */,
 				4CECCC941DFE812800E78314 /* MJChiBaoZiHeader.m in Sources */,
 				4CECCC881DFE812800E78314 /* MJRefreshComponent.m in Sources */,
@@ -2665,6 +2805,7 @@
 				4CECCCA81DFE812800E78314 /* UIView+WebCacheOperation.m in Sources */,
 				4CF76DB31E0293FD004B8869 /* OKOrderTableViewCell.m in Sources */,
 				4CF76D801E024130004B8869 /* ComViewTableViewCell.m in Sources */,
+				4C0F0E6B1E0512410056E072 /* PayViewController.m in Sources */,
 				4CECCC7D1DFE812800E78314 /* MJFoundation.m in Sources */,
 				4CF76D9F1E028005004B8869 /* ClassSlitViewController.m in Sources */,
 				4CECCC721DFE812800E78314 /* IQKeyboardReturnKeyHandler.m in Sources */,
@@ -2673,16 +2814,19 @@
 				4CECCC741DFE812800E78314 /* IQTextView.m in Sources */,
 				4CE8CB381E014183000BDE72 /* FriendlistTableViewCell.m in Sources */,
 				4CECCC671DFE812800E78314 /* UIButton+AFNetworking.m in Sources */,
+				4C0F0E6E1E05144D0056E072 /* PayViewTableViewCell.m in Sources */,
 				4CF76D721E023BAA004B8869 /* OrganiHomeTableViewCell.m in Sources */,
 				4CECCCC11DFE812800E78314 /* NSString+RemoveEmoji.m in Sources */,
 				4CECCCB11DFE812800E78314 /* UIView+ZJFrame.m in Sources */,
 				4CECCC8E1DFE812800E78314 /* MJRefreshBackGifFooter.m in Sources */,
+				4CE665501E06BB5100941649 /* ResultsInquiryViewController.m in Sources */,
 				4CECCC961DFE812800E78314 /* MJRefreshConst.m in Sources */,
 				4CECCC971DFE812800E78314 /* UIScrollView+MJExtension.m in Sources */,
 				4CECCCA71DFE812800E78314 /* UIImageView+WebCache.m in Sources */,
 				4CECCCB01DFE812800E78314 /* XMLReader.m in Sources */,
 				4CF76D8D1E024B72004B8869 /* FinishViewController.m in Sources */,
 				4CF76DAB1E028D2E004B8869 /* SelectSonTableViewCell.m in Sources */,
+				4CE665331E0677CE00941649 /* MyLocationViewController.m in Sources */,
 				4CECCCAB1DFE812800E78314 /* ItemView.m in Sources */,
 				4CECCDD71DFE8DBD00E78314 /* RegisterViewController.m in Sources */,
 				4CECCC7B1DFE812800E78314 /* MJDictionaryCache.m in Sources */,
@@ -2720,7 +2864,9 @@
 				4CECCC781DFE812800E78314 /* IQUIView+IQKeyboardToolbar.m in Sources */,
 				4CECCCA01DFE812800E78314 /* SDWebImageDownloaderOperation.m in Sources */,
 				4CECCC991DFE812800E78314 /* UIView+MJExtension.m in Sources */,
+				4CE6652E1E06691000941649 /* MCTableSelectView.m in Sources */,
 				4CECCC851DFE812800E78314 /* NSString+MJExtension.m in Sources */,
+				4CE6653F1E0686CA00941649 /* ActicitIntroduceViewController.m in Sources */,
 				4CECCCAE1DFE812800E78314 /* MCToolsManage.m in Sources */,
 				4CECCC631DFE812800E78314 /* AFAutoPurgingImageCache.m in Sources */,
 				4CF76DA81E028CA9004B8869 /* SelectSonViewController.m in Sources */,
@@ -2728,6 +2874,7 @@
 				4CECCCA61DFE812800E78314 /* UIImageView+HighlightedWebCache.m in Sources */,
 				4CECCCA31DFE812800E78314 /* UIButton+WebCache.m in Sources */,
 				4CECCCAD1DFE812800E78314 /* MCtimeSelectView.m in Sources */,
+				4CE665391E06865F00941649 /* ActivityDetailsViewController.m in Sources */,
 				4CECCC6F1DFE812800E78314 /* IQUIView+Hierarchy.m in Sources */,
 				4CECCC811DFE812800E78314 /* NSObject+MJClass.m in Sources */,
 				4CECCCBA1DFE812800E78314 /* ZYQAssetPickerController.m in Sources */,
@@ -2744,12 +2891,14 @@
 				4CECCCB71DFE812800E78314 /* ZJSegmentStyle.m in Sources */,
 				4CE8CB3B1E0149EE000BDE72 /* MCCapacityView.m in Sources */,
 				4CF76D711E023BAA004B8869 /* OrganiHomeViewController.m in Sources */,
+				4CE665421E06974A00941649 /* ActivityApplyTableViewCell.m in Sources */,
 				4CECCCB81DFE812800E78314 /* ZJTitleView.m in Sources */,
 				4CF76D791E02408C004B8869 /* CourseDetailsViewController.m in Sources */,
 				4CECCC701DFE812800E78314 /* IQUIWindow+Hierarchy.m in Sources */,
 				4CECCC751DFE812800E78314 /* IQBarButtonItem.m in Sources */,
 				4CECCC911DFE812800E78314 /* MJRefreshGifHeader.m in Sources */,
 				4CECCC801DFE812800E78314 /* MJPropertyType.m in Sources */,
+				4CE665531E06C1A500941649 /* InquirydateilsViewController.m in Sources */,
 				4CECCC651DFE812800E78314 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				4CF76D901E026831004B8869 /* OpinionViewController.m in Sources */,
 				4CE8CB421E014BA6000BDE72 /* MyQRcodeViewController.m in Sources */,
@@ -2758,6 +2907,8 @@
 				4CECCC9C1DFE812800E78314 /* SDImageCache.m in Sources */,
 				4CECCC7E1DFE812800E78314 /* MJProperty.m in Sources */,
 				4CECCCC31DFE812800E78314 /* UIView+Extension.m in Sources */,
+				4CE6654D1E06B2D200941649 /* ApplyViewController.m in Sources */,
+				4CE665481E069FB500941649 /* UIColor+Extensions.m in Sources */,
 				4CECCC841DFE812800E78314 /* NSObject+MJProperty.m in Sources */,
 				4CF76D6F1E023BAA004B8869 /* ClassKCViewController.m in Sources */,
 				4C2AC5251DFFC5E8006637E7 /* MyDynamicTableViewCell.m in Sources */,
@@ -2776,6 +2927,7 @@
 				4CECCDC01DFE83AE00E78314 /* LogInViewController.m in Sources */,
 				4CECCC661DFE812800E78314 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				4CECCC891DFE812800E78314 /* MJRefreshFooter.m in Sources */,
+				4C0F0E781E053ADF0056E072 /* MCimgRBtn.m in Sources */,
 				4CECCCB31DFE812800E78314 /* ZJCollectionView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

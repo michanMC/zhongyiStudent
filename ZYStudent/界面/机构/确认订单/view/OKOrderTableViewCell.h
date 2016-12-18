@@ -15,7 +15,7 @@
 -(void)prepareUI2;
 
 
-
+@property(nonatomic,strong)UILabel * titleLbl;
 @property(nonatomic,strong)UITextField * phoneText;
 -(void)prepareUI3;
 

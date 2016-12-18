@@ -116,11 +116,11 @@
         [view removeFromSuperview];
     }
     CGFloat w = [MCToolsManage heightforString:@"联系方式" andHeight:44 fontSize:14];
-    UILabel * lbl =[[UILabel alloc]initWithFrame:CGRectMake(10, 0, w, 44)];
-    lbl.text = @"联系方式";
-    lbl.font = [UIFont systemFontOfSize:14];
+    _titleLbl =[[UILabel alloc]initWithFrame:CGRectMake(10, 0, w, 44)];
+    _titleLbl.text = @"联系方式";
+    _titleLbl.font = [UIFont systemFontOfSize:14];
     
-    [self.contentView addSubview:lbl];
+    [self.contentView addSubview:_titleLbl];
     
 
 
