@@ -188,6 +188,74 @@
     
     
 }
+-(void)prepareUI4{
+    
+    for (UIView * view in self.contentView.subviews) {
+        [view removeFromSuperview];
+    }
+    
+    CGFloat x = 5;
+    CGFloat selfViewh = MCAdaptiveH(750, 283, Main_Screen_Width);
+    CGFloat y = 10;
+    CGFloat h = selfViewh - 20;
+    CGFloat imgw = MCAdaptiveW(300, 240, h);
+    UIImageView  * imgView = [[UIImageView alloc]initWithFrame:CGRectMake(x, y, imgw, h)];
+    imgView.image = [UIImage imageNamed:@"def_organ-class"];
+    [self.contentView addSubview:imgView];
+    CGFloat lw = [MCIucencyView heightforString:@"一对一" andHeight:20 fontSize:14];
+    UIImageView * bgImg = [[UIImageView alloc]initWithFrame:CGRectMake(0, 10, lw + 10, 20)];
+    bgImg.image = [UIImage imageNamed:@"pic_class-bg"];
+    [imgView addSubview:bgImg];
+    UILabel * lbl = [[UILabel alloc]initWithFrame:CGRectMake(5, 0, lw, 20)];
+    lbl.textColor = [UIColor darkTextColor];
+    lbl.font = [UIFont systemFontOfSize:14];
+    lbl.text = @"一对一";
+    [bgImg addSubview:lbl];
+    x =  imgView.mj_x + imgView.mj_w + 5;
+    CGFloat  w = Main_Screen_Width - x - 5;
+    
+    h = 40;
+    y += 3;
+    
+    UILabel * titleLbl = [[UILabel alloc]initWithFrame:CGRectMake(x, y, w, h)];
+    titleLbl.text = @"艺术培训机构艺术培训机构艺术培训机构艺术培训机构艺术培训机构";
+    titleLbl.textColor = [UIColor darkTextColor];
+    titleLbl.font = [UIFont systemFontOfSize:15];
+    titleLbl.numberOfLines = 0;
+    [self.contentView addSubview:titleLbl];
+    y+=h + 3;
+    h = 20;
+UILabel * orLbl = [[UILabel alloc]initWithFrame:CGRectMake(x, y, w, h)];
+    orLbl.textColor = [UIColor lightGrayColor];
+orLbl.text = @"不知名机构";
+    orLbl.font =[UIFont systemFontOfSize:14];
+    [self.contentView addSubview:orLbl];
+
+    
+    
+    x = titleLbl.mj_x;
+    y += h;
+    w= Main_Screen_Width - 10 - x;
+    UILabel * namelbl = [[UILabel alloc]initWithFrame:CGRectMake(x, y, w, h)];
+    namelbl.text = @"michan";
+    namelbl.textColor = [UIColor grayColor];
+    namelbl.font =[UIFont systemFontOfSize:14];
+    [self.contentView addSubview:namelbl];
+    
+    
+    
+    y = imgView.mj_y + imgView.mj_h - 20;
+    w= titleLbl.mj_w;
+    UILabel * Pricelbl = [[UILabel alloc]initWithFrame:CGRectMake(x, y, w, h)];
+    Pricelbl.text = @"剩余课时:17";
+    Pricelbl.textAlignment = NSTextAlignmentRight;
+    Pricelbl.textColor = [UIColor redColor];
+    Pricelbl.font =[UIFont systemFontOfSize:16];
+    [self.contentView addSubview:Pricelbl];
+    
+    
+}
+
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code

@@ -27,7 +27,13 @@
 @end
 
 @implementation FriendlistViewController
-
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [self MCCapacityViewhidden];
+    
+    
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"好友列表";

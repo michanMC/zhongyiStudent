@@ -9,5 +9,5 @@
 #import "BaseViewController.h"
 
 @interface ActivityViewController : BaseViewController
-
+@property(nonatomic,assign)NSInteger mectl;//1 个人中心跳过来
 @end

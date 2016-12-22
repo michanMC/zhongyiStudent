@@ -32,7 +32,11 @@
 }
 -(void)prepareUI{
     
-    _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, Main_Screen_Width, Main_Screen_Height - 64-49) style:UITableViewStyleGrouped];
+    CGFloat yy = 49;
+    if (_mectl) {
+        yy = 0;
+    }
+    _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, Main_Screen_Width, Main_Screen_Height - 64-yy) style:UITableViewStyleGrouped];
     _tableView.delegate =self;
     _tableView.dataSource = self;
     [self.view addSubview:_tableView];

@@ -13,6 +13,10 @@
 #import "TeacherCardViewController.h"
 #import "MakeAcceptViewController.h"
 #import "OKOrderViewController.h"
+#import "BonusManViewController.h"
+#import "LeaveViewController.h"
+#import "melodyViewController.h"
+
 @interface CourseDetailsViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
     UITableView * _tableView;
@@ -107,6 +111,8 @@
     
 }
 -(void)preparebarView{
+    
+    //ismeHomeCtl
     UIView * view = [[UIView alloc]initWithFrame:CGRectMake(0, Main_Screen_Height - 49, Main_Screen_Width, 49)];
     view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:view];
@@ -115,6 +121,30 @@
     CGFloat y = 0;
     CGFloat w = Main_Screen_Width/2;
     CGFloat h = 49;
+    if (_ismeHomeCtl) {
+        w  = w/2;
+        UIButton * btn = [[UIButton alloc]initWithFrame:CGRectMake(x, y, w, h)];
+        btn.backgroundColor = AppBgCOLOR;
+        [btn setTitle:@"调班" forState:0];
+        btn.titleLabel.font = [UIFont systemFontOfSize:15];
+        [btn setTitleColor:[UIColor grayColor] forState:0];
+        [btn addTarget:self action:@selector(actionTB) forControlEvents:UIControlEventTouchUpInside];
+        [view addSubview:btn];
+        x+=w;
+        
+        btn = [[UIButton alloc]initWithFrame:CGRectMake(x, y, w, h)];
+        btn.backgroundColor = [UIColor groupTableViewBackgroundColor];
+        [btn setTitle:@"请假" forState:0];
+        btn.titleLabel.font = [UIFont systemFontOfSize:15];
+        [btn setTitleColor:[UIColor grayColor] forState:0];
+            [btn addTarget:self action:@selector(actionQJ) forControlEvents:UIControlEventTouchUpInside];
+        [view addSubview:btn];
+
+        
+        
+    }
+    else
+    {
     UIButton * btn = [[UIButton alloc]initWithFrame:CGRectMake(x, y, w, h)];
     btn.backgroundColor = [UIColor groupTableViewBackgroundColor];
     [btn setTitle:@"预约试听" forState:0];
@@ -122,15 +152,27 @@
     [btn setTitleColor:[UIColor grayColor] forState:0];
     [btn addTarget:self action:@selector(actionST) forControlEvents:UIControlEventTouchUpInside];
     [view addSubview:btn];
+    }
+    
+    
    
     x += w;
     w = Main_Screen_Width/2;
-    btn = [[UIButton alloc]initWithFrame:CGRectMake(x, y, w, h)];
+   UIButton* btn = [[UIButton alloc]initWithFrame:CGRectMake(x, y, w, h)];
     btn.backgroundColor = AppMCNACOLOR;
-    [btn setTitle:@"立即报名" forState:0];
     btn.titleLabel.font = [UIFont systemFontOfSize:15];
-    [btn addTarget:self action:@selector(actionCallClass) forControlEvents:1<<6];
     
+    if (_ismeHomeCtl) {
+        [btn setTitle:@"课时管理" forState:0];
+        [btn addTarget:self action:@selector(actionClasstoos) forControlEvents:1<<6];
+
+    }
+    else
+    {
+        [btn setTitle:@"立即报名" forState:0];
+        [btn addTarget:self action:@selector(actionCallClass) forControlEvents:1<<6];
+
+    }
     UIColor *cc = AppMCNATitleCOLOR;
     [btn setTitleColor:cc forState:0];
     [view addSubview:btn];
@@ -268,6 +310,26 @@
 -(void)actionCallClass{
     OKOrderViewController * ctl =[[OKOrderViewController alloc]init];
     [self pushNewViewController:ctl];
+}
+#pragma mark-管理课时
+-(void)actionClasstoos{
+    
+    BonusManViewController * ctl =[[BonusManViewController alloc]init];
+    [self pushNewViewController:ctl];
+
+    
+}
+-(void)actionQJ{
+    LeaveViewController * ctl =[[LeaveViewController alloc]init];
+    [self pushNewViewController:ctl];
+    
+}
+-(void)actionTB{
+    melodyViewController * ctl =[[melodyViewController alloc]init];
+    [self pushNewViewController:ctl];
+    
+    
+    
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

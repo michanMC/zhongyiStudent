@@ -71,7 +71,7 @@
     locationLbl.textAlignment =NSTextAlignmentRight;
     [lview addSubview:locationLbl];
     UIImageView * imgview =[[UIImageView alloc]initWithFrame:CGRectMake(30, 12, 20, 20)];
-    imgview.image =[UIImage imageNamed:@"btn_cbb2"];
+    imgview.image =[UIImage imageNamed:@"nav_cbb"];
     UIButton * locaBtn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 50, 44)];
     [locaBtn addTarget:self action:@selector(actiola) forControlEvents:1<<6];
     
@@ -119,7 +119,7 @@
     _regionLbl.font =[UIFont systemFontOfSize:14];
     [view1 addSubview:_regionLbl];
     _regionimg = [[UIImageView alloc]initWithFrame:CGRectMake(0, (h - 20)/2, 20, 20)];
-    _regionimg.image =[ UIImage imageNamed:@"btn_cbb2"];
+    _regionimg.image =[ UIImage imageNamed:@"nav_cbb2"];
     _regionbtn =[[UIButton alloc]initWithFrame:CGRectMake(0, 0, w, h)];
     [_regionbtn addTarget:self action:@selector(actionRegbtn) forControlEvents:1<<6];
     [view1 addSubview:_regionbtn];
@@ -137,7 +137,7 @@
     _courseLbl.font =[UIFont systemFontOfSize:14];
     [view1 addSubview:_courseLbl];
     _courseimg = [[UIImageView alloc]initWithFrame:CGRectMake(0, (h - 20)/2, 20, 20)];
-    _courseimg.image =[ UIImage imageNamed:@"btn_cbb2"];
+    _courseimg.image =[ UIImage imageNamed:@"nav_cbb2"];
     [view1 addSubview:_courseimg];
     _coursebtn =[[UIButton alloc]initWithFrame:CGRectMake(0, 0, w, h)];
     [view1 addSubview:_coursebtn];
@@ -155,7 +155,7 @@
     _sortLbl.font =[UIFont systemFontOfSize:14];
     [view1 addSubview:_sortLbl];
     _sortimg = [[UIImageView alloc]initWithFrame:CGRectMake(0, (h - 20)/2, 20, 20)];
-    _sortimg.image =[ UIImage imageNamed:@"btn_cbb2"];
+    _sortimg.image =[ UIImage imageNamed:@"nav_cbb2"];
     [view1 addSubview:_sortimg];
     _sortbtn =[[UIButton alloc]initWithFrame:CGRectMake(0, 0, w, h)];
     [view1 addSubview:_sortbtn];
@@ -212,7 +212,7 @@
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    OrganiDetailsViewController * ctl = [[OrganiDetailsViewController alloc]init];
+   OrganiDetailsViewController * ctl = [[OrganiDetailsViewController alloc]init];
     [self pushNewViewController:ctl];
     
 }
